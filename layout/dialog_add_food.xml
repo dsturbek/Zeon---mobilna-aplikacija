@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pozadina_card"
+    android:padding="24dp"
+    android:paddingBottom="80dp">
+
+    <TextView
+        android:labelFor="@id/etFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_food_naziv_hrane"
+        android:textColor="@color/svijetlo_siva"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="text"
+        android:hint="npr. Piletina"
+        android:textColor="@color/bijela"
+        android:textColorHint="@color/svijetlo_siva"
+        android:textSize="16sp"
+        android:background="@color/siva"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+         />
+
+    <TextView
+        android:labelFor="@id/etCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_food_kalorije"
+        android:textColor="@color/svijetlo_siva"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etCalories"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="number"
+        android:hint="@string/add_food_hint_text"
+        android:textColor="@color/bijela"
+        android:textColorHint="@color/svijetlo_siva"
+        android:textSize="16sp"
+        android:background="@color/siva"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:labelFor="@id/etProtein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_food_proteini"
+        android:textColor="@color/svijetlo_siva"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etProtein"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/add_food_hint_text"
+        android:textColor="@color/bijela"
+        android:textColorHint="@color/svijetlo_siva"
+        android:textSize="16sp"
+        android:background="@color/siva"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:labelFor="@id/etFat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_food_masti"
+        android:textColor="@color/svijetlo_siva"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etFat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/add_food_hint_text"
+        android:textColor="@color/bijela"
+        android:textColorHint="@color/svijetlo_siva"
+        android:textSize="16sp"
+        android:background="@color/siva"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:labelFor="@id/etCarbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_food_ugljikohidrati"
+        android:textColor="@color/svijetlo_siva"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etCarbs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/add_food_hint_text"
+        android:textColor="@color/bijela"
+        android:textColorHint="@color/svijetlo_siva"
+        android:textSize="16sp"
+        android:background="@color/siva"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tip hrane"
+        android:textColor="@color/bijela"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spinnerFoodType"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/siva"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnDodaj"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/button_text_dodaj"
+            android:textColor="@color/bijela"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/crvena"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            />
+        <Button
+            android:id="@+id/btnOdustani"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/button_text_odustani"
+            android:textColor="@color/svijetlo_siva"
+            android:textSize="16sp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:layout_marginStart="12dp"/>
+
+    </LinearLayout>
+</LinearLayout>
